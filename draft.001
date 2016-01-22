@@ -1,0 +1,14 @@
+(+)  = add
+(-)  = sub
+
+inc = add 1
+dec = sub _ 1
+
+--------------
+= 2 + 2
+= 18
+= This is a long single line text with #{var}s
+  and the story is so long
+  that never ends
+.
+x = add 1 2
