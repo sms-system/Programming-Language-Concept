@@ -1,0 +1,20 @@
+-- Comment
+
+=` This is example of string
+   and it's multiline
+
+-- SECTION I ----------------
+
+==` This is example of string
+    and it's singleline
+
+-- SECTION II ----------------
+
+-- And comments
+   may be multiline
+
+= 2 + 2
+  2 + 3
+
+== 2 + 2
+   2 + 3
