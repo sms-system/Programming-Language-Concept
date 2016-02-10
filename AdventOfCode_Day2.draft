@@ -1,0 +1,11 @@
+@AdventOfCode.Day2
+
+total = 0
+
+each input as row
+  dimensions = split 'x' row
+  total = it
+    + 2 * (+) val take 2 sort dimensions
+    + (*) dimensions
+
+print total
