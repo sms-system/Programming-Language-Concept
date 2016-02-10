@@ -1,0 +1,15 @@
+@AdventOfCode.Day1
+
+move floor dir
+| dir == '(' = floor+1
+| dir == ')' = floor-1
+
+floor = 0
+step  = 0
+
+each input as dir
+  if floor == -1 =>
+    print step
+    out
+  inc step
+  floor = move it dir
