@@ -1,0 +1,19 @@
+input = 'v<^>><<<'
+
+persons = ['Santa', 'RoboSanta']
+
+move (x, y) dir
+ | dir == '^' = x, y-1
+ | dir == '>' = x+1, y
+ | dir == 'v' = x, y+1
+ | dir == '<' = x-1, y
+
+position#persons = 0, 0
+houses = [position#persons]
+
+each input as dir
+  person = next cycled persons
+  position#person = move it dir
+  houses ++ position#person if unical
+
+print count houses
