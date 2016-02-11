@@ -6,4 +6,4 @@ each input as str
   if (&)
     str is [.. a, _, a ..]
     str is [.. a, a .. b, b ..]
-  then total = it + 1
+  then inc total
