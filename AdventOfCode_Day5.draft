@@ -5,5 +5,5 @@ total = 0
 each input as str
   if (&)
     str is [.. a, _, a ..]
-    str input is [.. a, a .. b, b ..]
+    str is [.. a, a .. b, b ..]
   then total = it + 1
