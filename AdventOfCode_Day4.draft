@@ -1,4 +1,4 @@
 @AdventOfCode.Day4
 
 hashes = md5 (input ++ x) where x in [1..]
-print take filter (last 6 it == repeat 6 '0') hashes
+print take filter (it is [..] ++ repeat 6 '0') hashes
