@@ -4,6 +4,6 @@ total = 0
 
 each input as str
   if (&)
-    str has slice [a, _, a]
-    str input has slice [a, a, .. b, b]
+    str is [.. a, _, a ..]
+    str input is [.. a, a .. b, b ..]
   then total = it + 1
