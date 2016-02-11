@@ -7,3 +7,5 @@ each input as str
     str is [.. a, _, a ..]
     str is [.. a, a .. b, b ..]
   then inc total
+
+print total
