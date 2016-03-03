@@ -1,0 +1,41 @@
+@GameIO
+
+stars = [
+	{
+		time: 500,
+		points: 50
+	},
+	{
+		time: 1000,
+		points: 30
+	},
+	{
+		time: 1500,
+		points: 10
+	}
+]
+
+>> runGame =
+  cycled timeout#game 200
+    drawStar (generate from stars) (x, y)
+  cycled timeout#time 1000
+    timeIterate
+
+stopGame =
+  timeout#(game,time).stop
+
+timeIterate with time =
+  it -= 1
+  drawTimeBar it
+  if it == 0 -> stopGame
+
+drawStar params, coords
+with el '<div class="star#{params##}"></div>' =
+   it.css {
+     x: coords#1,
+     y: coords#2
+   }
+   $field.add it
+   it#points = params#points
+   timeout#(it##) params#time
+     it.remove
