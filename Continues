@@ -1,0 +1,11 @@
+number = ..
+  if opposite
+    ..-42
+  else
+    ..13
+    
+print..
+  if a
+    ..'A'
+  else
+    ..'B'
