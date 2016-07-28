@@ -1,0 +1,9 @@
+-- class App extends Core
+@App < Core {
+
+  inc = (a) a+1,
+  dec = (a) {
+   = a-1
+  }
+
+}
