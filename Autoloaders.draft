@@ -1,0 +1,20 @@
+use foo.bar.Baz
+use foo.bar.Baz as FooBarBaz
+
+use foo.{Bar, Baz}
+use foo.*
+use foo.{-Baz, *}
+
+use foo.* as _name => ..
+use foo.{-Baz, *} as => it
+
+
+use foo.{
+  name => {
+    name not startsWith 'A'
+  },
+  => {
+    it not startsWith 'B'
+  },
+  *
+ } as name => { -> 'A'+name }
